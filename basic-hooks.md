@@ -1,4 +1,4 @@
-#Temel Hooklar
+# Temel Hooklar
 
 Hooklar React uygulamaları içerisinde class bileşenleri kullanmak zorunda olmadan state oluşturmayı ve bunları değiştirmeyi sağlayan yapılardır. Hooklar ile birlikte React, fonksiyonel programlama prensiplerini daha fazla kullanmaya başladı. Ayrıca, hooklar `props`, `context`, `refs`, `lifecycle` gibi kavramlara doğrudan ulaşabilmeyi sağlar.
 
@@ -12,14 +12,19 @@ Temel olarak hook kullanımını `useState` hooku ile göstermeye başlayabiliri
 import React, { useState } from 'react';
 
 function Example() {
-  // "count" adında yeni bir state değişkeni tanımlayın.
+  // count       => state
+  // setCount    => stateti değiştirmemizi sağlayan önceden tanımlanmış fonksiyon
+  // useState(0) => ise statetin başlangıç değeri.
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <p>You clicked {count} times</p>
+    //stateti JSX kurallarına uymak kaydıyla aşağıdaki gibi kullanabilirsiniz.
+      <p> {count} defa tıkladın.</p>
+
+      // count değerini onClick içerisinde setCount fonksiyonunu kullanarak güncelleyebiliriz.
       <button onClick={() => setCount(count + 1)}>
-        Click me
+        Artır
       </button>
     </div>
   );
@@ -32,7 +37,7 @@ function Example() {
 
 `useEffect` hooku ile birlikte `componentDidMount`, `componentDidUpdate` ve `componentWillUnmount` lifecycle metotlarıyla aynı işi yapar fakat bunlar `useEffect` altında birleştirilmiştir.
 
-##Temel kurallar:
+## Temel kurallar:
 
 - Hooklar class bileşenler altında kullanılmaz
 - Hooklar yalnız react fonksiyonları ile kullanılabilir

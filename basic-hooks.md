@@ -65,7 +65,8 @@ function demo() {
     //useEffect bunu takip eder ve aşağıdaki özellik çalışır.
     console.log('yüklendi!');
 
-    // Eğer sayfadan ayrılmadan önce herhangi bir işlem yapmak istiyorsanız bir fonksiyon return ederek buna ///bağlı bir callback ile istediğiniz işlemi yapabilirsiniz.
+    // `Eğer sayfadan ayrılmadan önce herhangi bir işlem yapmak istiyorsanız bir fonksiyon return ederek buna`
+    // bağlı bir callback ile istediğiniz işlemi yapabilirsiniz.
     return () => console.log('sayfadan çıkılıyor...');
   })
 

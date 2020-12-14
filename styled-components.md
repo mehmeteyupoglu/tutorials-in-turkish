@@ -39,7 +39,7 @@ Styled components stillendirme yapabilmeniz için react bileşeni oluşturur ve 
 
 Bir stillendirilmiş bileşen oluşturup, sonrasında bunu tek seferliğine değiştirme imkanımız olabilir. Bu durumda butonun tüm özelliklerini alıp belli özelliklerini değiştirmek isteyebiliriz. Styled-components kütüphanesi ile yeniden kullanılabilir bileşenler yapmak oldukça kolay.
 
-Tanımlanmış bir butonu alıp tek kullanım için değiştirmemiz gerektiğinde styled() methodunu kullanmak yeterlidir.
+Tanımlanmış bir butonu alıp tek kullanım için değiştirmemiz gerektiğinde `styled()` methodunu kullanmak yeterlidir.
 
 ```
 // Stillendirip kullanacağımız bir buton oluşturalım.
@@ -52,7 +52,7 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-// Yukarıda stillendirdiğimiz buton bileşenini styled() metodu yardımıyla aşağıdaki gibi değiştirelim
+// Yukarıda stillendirdiğimiz buton bileşenini `styled()` metodu yardımıyla aşağıdaki gibi değiştirelim
 const TomatoButton = styled(Button)`
   color: tomato;
   border-color: tomato;

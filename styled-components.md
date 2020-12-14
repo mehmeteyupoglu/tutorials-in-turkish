@@ -30,3 +30,5 @@ Styled components stillendirme yapabilmeniz için react bileşeni oluşturur ve 
       </Wrapper>
     );
 ```
+
+![styled-header](../tutorials-in-turkish/styled-component.png)

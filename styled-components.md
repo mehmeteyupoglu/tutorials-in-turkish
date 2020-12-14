@@ -31,4 +31,4 @@ Styled components stillendirme yapabilmeniz için react bileşeni oluşturur ve 
     );
 ```
 
-![styled-header](tutorials-in-turkish/styled-component.png)
+![styled-header](styled-component.png)

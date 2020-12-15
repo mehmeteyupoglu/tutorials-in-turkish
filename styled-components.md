@@ -73,7 +73,7 @@ Stillendirilmiş bileşenler bir React bileşeni olduğu için prop içerisinde 
 ````javascript
 // Bir input etiketi oluşturalım ve bu etiketi aşağıdaki gibi stillendirelim.
 // Gördüğünüz gibi, input içindeki renk props olarak gelmektedir.
-// Eğer herhangi bir değer gelmiyorsa default olarak *palevioletred* seçilmiştir.
+// Eğer herhangi bir değer gelmiyorsa default olarak palevioletred seçilmiştir.
 const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em;

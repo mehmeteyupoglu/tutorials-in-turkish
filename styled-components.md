@@ -71,7 +71,9 @@ render(
 Stillendirilmiş bileşenler bir React bileşeni olduğu için prop içerisinde veri göndermek mümkündür. Bu özelliği kullanarak bileşenlerinizi daha da özelleştirebilirsiniz.
 
 ````javascript
-// Bir input etiketi oluşturalım ve bu etiketi aşağıdaki gibi stillendirelim. Gördüğünüz gibi, input içindeki renk props olarak gelmektedir. Eğer herhangi bir değer gelmiyorsa default olarak *palevioletred* seçilmiştir.
+// Bir input etiketi oluşturalım ve bu etiketi aşağıdaki gibi stillendirelim.
+// Gördüğünüz gibi, input içindeki renk props olarak gelmektedir.
+// Eğer herhangi bir değer gelmiyorsa default olarak *palevioletred* seçilmiştir.
 const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em;

@@ -10,8 +10,8 @@ Temel olarak hook kullanımını `useState` hooku ile göstermeye başlayabiliri
 
 Örnek: `useState` kullanımı
 
-```
-import React, { useState } from 'react';
+```javascript
+import React, { useState } from "react";
 
 function Example() {
   // count       => state
@@ -21,13 +21,11 @@ function Example() {
 
   return (
     <div>
-    //stateti JSX kurallarına uymak kaydıyla aşağıdaki gibi kullanabilirsiniz.
+      //stateti JSX kurallarına uymak kaydıyla aşağıdaki gibi kullanabilirsiniz.
       <p> {count} defa tıkladın.</p>
-
-      // count değerini onClick içerisinde setCount fonksiyonunu kullanarak güncelleyebiliriz.
-      <button onClick={() => setCount(count + 1)}>
-        Artır
-      </button>
+      // count değerini onClick içerisinde setCount fonksiyonunu kullanarak
+      güncelleyebiliriz.
+      <button onClick={() => setCount(count + 1)}>Artır</button>
     </div>
   );
 }
@@ -37,10 +35,10 @@ function Example() {
 
 Örnek: Birden fazla `useState` kullanımı:
 
-```
+```javascript
 const [count, setCount] = useState(0);
-const [todos, setTodo] = useState('');
-const [names, setName] = useState('Mehmet Eyüpoğlu');
+const [todos, setTodo] = useState("");
+const [names, setName] = useState("Mehmet Eyüpoğlu");
 ```
 
 Yukarıdaki örnekte görüldüğü gibi bazı isimlendirme kuralları mevcut. Bu kurallar yazılı olmasa da kodunuzun okunabilirliğini artırmak adına bunlara sadık kalmak tercih edilir.
@@ -53,22 +51,20 @@ Bir react bileşeninin ekrana yüklenmesine ya da mevcut arayüzün güncellenme
 
 `useEffect` özellikle bir apiden veri çekme işlemlerinde oldukça işe yarar.
 
-```
-import React, { useEffect } from 'react';
-
+```javascript
+import React, { useEffect } from "react";
 
 function demo() {
   // useEffect fonksiyonunu burada tanımlanır.
   useEffect(() => {
-
     //Sayfa yüklendiğinde ve herhangi bir değişiklik yapıldığında
     //useEffect bunu takip eder ve aşağıdaki özellik çalışır.
-    console.log('yüklendi!');
+    console.log("yüklendi!");
 
     // Eğer sayfadan ayrılmadan önce herhangi bir işlem yapmak istiyorsanız bir fonksiyon return ederek buna
     // bağlı bir callback ile istediğiniz işlemi yapabilirsiniz.
-    return () => console.log('sayfadan çıkılıyor...');
-  })
+    return () => console.log("sayfadan çıkılıyor...");
+  });
 
   return "Bu bir demodur.";
 }
